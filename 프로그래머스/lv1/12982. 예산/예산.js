@@ -4,7 +4,7 @@ function solution(d, budget) {
         if(budget >= e){
             budget -= e
             result++
-        }else return result
+        }
     })
     return result
 }
