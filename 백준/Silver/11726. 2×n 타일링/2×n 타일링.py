@@ -1,11 +1,9 @@
-def fib(n):
-    a, b = 1, 1
-        
-    for i in range(2, n+1):
-        a, b = b, (a + b) % 10007
-
-    return b
+def fibo(n):
+    a = [1, 1]
+    for i in range(n):
+        a.append(a[i] + a[i + 1])
+    return a[n] % 10007
 
 n = int(input())
-result = fib(n)
+result = fibo(n)
 print(result)
